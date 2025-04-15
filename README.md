@@ -49,3 +49,13 @@ npx hardhat test
 
 ## Test Success Result
 ![Tests](/assets/tests.png)
+
+## How to test the Flow
+1. Transfer some [TestToken](https://sepolia.etherscan.io/address/0xb5D08B3B98E6d3642898E205443956f662721E4d#code) from TestToken creator's address to the staker's address (Input: Staker's address & amount with 18 zeroes for decimals) with `transfer` function
+2. Approve tokens for the [Staking](https://sepolia.etherscan.io/address/0x0f5750E09F9729ddDeE5b3c030192AFEb787C732#code) contract address from staker's address with `approve` function (Input: Stakering contract address & amount with 18 zeroes for decimals)
+3. Stake tokens on the [Staking](https://sepolia.etherscan.io/address/0x0f5750E09F9729ddDeE5b3c030192AFEb787C732#code) contract with `stake` function (amount with 18 zeroes for decimals)
+4. Call `claimGovToken` function on the [Staking](https://sepolia.etherscan.io/address/0x0f5750E09F9729ddDeE5b3c030192AFEb787C732#code) contract to claim GovToken as staking reward.
+5. Create Proposal on the [DAO](https://sepolia.etherscan.io/address/0x53fF81b322240C510c666D4104880347333eE10A#code) contract. provide description and duration in the `createProposal` function.
+6. Check proposal details with `proposal` function by entering id which is incremental starting from 0.
+7. Vote on proposal using `vote` function (Input: proposal id & YES/NO).
+8. Check proposal status with `getProposalStatus` function by entering id which is incremental starting from 0.
