@@ -15,8 +15,8 @@ This project implements a minimal DAO with staking, a governance token, and prop
 
 ## Environment Setup
 ```bash
-git clone <repo_url>
-cd dao-ecosystem
+git clone https://github.com/mohit6b/DAO-ecosystem.git
+cd DAO-ecosystem
 npm install
 npx hardhat compile
 ```
@@ -36,8 +36,10 @@ npx hardhat test
 - 1 base token staked = 1 GOV/day
 - Voting power is based on live GovToken balance
 
-## Sepolia Testnet Addresses
-- GovToken - `0xD4DD1E5FEe92D42e8B6086987B7A1Cd799088a2f`
-- TestToken - `0xb5D08B3B98E6d3642898E205443956f662721E4d`
-- DAO - `0x53fF81b322240C510c666D4104880347333eE10A`
-- Staking - `0x0f5750E09F9729ddDeE5b3c030192AFEb787C732`
+## Sepolia Contract Addresses
+- [GovToken](https://sepolia.etherscan.io/address/0xD4DD1E5FEe92D42e8B6086987B7A1Cd799088a2f#code) - `0xD4DD1E5FEe92D42e8B6086987B7A1Cd799088a2f`
+- [TestToken](https://sepolia.etherscan.io/address/0xb5D08B3B98E6d3642898E205443956f662721E4d#code) - `0xb5D08B3B98E6d3642898E205443956f662721E4d`
+- [DAO](https://sepolia.etherscan.io/address/0x53fF81b322240C510c666D4104880347333eE10A#code) - `0x53fF81b322240C510c666D4104880347333eE10A`
+- [Staking](https://sepolia.etherscan.io/address/0x0f5750E09F9729ddDeE5b3c030192AFEb787C732#code) - `0x0f5750E09F9729ddDeE5b3c030192AFEb787C732`
+
+
