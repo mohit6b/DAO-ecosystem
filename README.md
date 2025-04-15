@@ -4,11 +4,13 @@
 This project implements a minimal DAO with staking, a governance token, and proposal voting using Hardhat and Solidity.
 
 ## Features
-- **GovToken (ERC-20)**: Minted only by staking contract
-- **Staking**: Stake base token to earn GovToken
-- **DAO Governance**: Vote on proposals with GovToken balance
+- **TestToken (ERC-20)**: Base token used for staking.
+- **GovToken (ERC-20)**: Token rewarded for staking TestToken. Minted only by staking contract.
+- **Staking**: Stake/UnStake base token to earn GovToken
+- **DAO Governance**: Create proposals & Vote on proposals with GovToken balance as power
 
 ## Contracts
+- `TestToken.sol` - ERC-20 base token
 - `GovToken.sol` - ERC-20 governance token
 - `Staking.sol` - Stake base token to earn GovToken
 - `DAO.sol` - Create and vote on proposals
@@ -36,10 +38,14 @@ npx hardhat test
 - 1 base token staked = 1 GOV/day
 - Voting power is based on live GovToken balance
 
-## Sepolia Contract Addresses
+## Sepolia Contract Links & Addresses
 - [GovToken](https://sepolia.etherscan.io/address/0xD4DD1E5FEe92D42e8B6086987B7A1Cd799088a2f#code) - `0xD4DD1E5FEe92D42e8B6086987B7A1Cd799088a2f`
 - [TestToken](https://sepolia.etherscan.io/address/0xb5D08B3B98E6d3642898E205443956f662721E4d#code) - `0xb5D08B3B98E6d3642898E205443956f662721E4d`
 - [DAO](https://sepolia.etherscan.io/address/0x53fF81b322240C510c666D4104880347333eE10A#code) - `0x53fF81b322240C510c666D4104880347333eE10A`
 - [Staking](https://sepolia.etherscan.io/address/0x0f5750E09F9729ddDeE5b3c030192AFEb787C732#code) - `0x0f5750E09F9729ddDeE5b3c030192AFEb787C732`
 
+## Deployment Success Result
+![Deployment](/assets/deploy.png)
 
+## Test Success Result
+![Tests](/assets/tests.png)
